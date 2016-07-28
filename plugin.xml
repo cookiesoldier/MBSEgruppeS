@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="bla"
+            class="mbse.tutorial.yawl.YawlPackage"
+            genModel="model/yawl.genmodel"/>
+   </extension>
+	<extension id="org.pnml.tools.epnk.pntypes.ptnet"
+	   name="YAWL Nets"
+	   point="org.pnml.tools.epnk.pntd">
+	   <type
+	      class="mbse.tutorial.yawl.impl.YAWLNetImpl"
+	      description="This is group S implementation of a YAWL net" />
+	</extension>	
+	
+	
+</plugin>
