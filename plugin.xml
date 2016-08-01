@@ -49,7 +49,7 @@
                <!-- TODO the class you refer to the Arc of your YAWL Ecore model,
                     the class name and the URI of the packake separated by a comma -->
                <target
-                     class="Arc:http://www.Yawldtu.dk">
+                     class="Arc:http://www.Yawldtu.dk/yawl">
                      
                   <!-- since this is a live constraint, you need to refer to tell the
                        validator when to check the constraint: in terms of events here
@@ -88,6 +88,41 @@
    </extension>
 	
 	
+   <extension
+         point="org.eclipse.emf.validation.constraintProviders">
+      <constraintProvider
+            cache="true">
+         <package
+               namespaceUri="http://www.Yawldtu.dk">
+         </package>
+         <constraints categories="org.pnml.tools.epnk.validation">
+            <!--  OCL constraint from 1. 
+               ...
+            -->
+            <!-- TODO class attribute of the constraint should be the fully qualified name
+                      of the class implementing the Java constraint, checking start and
+                      end places -->
+            <constraint
+                  lang="Java"
+                  class="yawl.StartAndEndPlaceValidation"
+                  severity="ERROR"
+                  mode="Batch"
+                  name="One start and end place"
+                  id="dk.dtu.compute.mbse.yawl.validation.one-start-and-end-place"
+                  statusCode="402">
+               <!-- TODO the class here needs to refer to Ecore class of the YAWL Petri net type
+                    (name and URI of the package separated by a colon) -->
+               <target class="YAWLNet:http://www.Yawldtu.dk/yawl"/>
+               <description>
+                  A YAWL net must have one start and end place.
+               </description>
+               <message>
+                  The YAWL net {0} does not have exactly one start place and one end place.
+               </message>
+            </constraint>
+         </constraints>
+      </constraintProvider>
+   </extension>
 	
 	
 	
