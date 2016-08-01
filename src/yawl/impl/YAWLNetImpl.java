@@ -1,13 +1,15 @@
 /**
  */
-package mbse.tutorial.yawl.impl;
+package yawl.impl;
 
-import mbse.tutorial.yawl.YAWLNet;
-import mbse.tutorial.yawl.YawlPackage;
+
 
 import org.eclipse.emf.ecore.EClass;
 
 import org.pnml.tools.epnk.pnmlcoremodel.impl.PetriNetTypeImpl;
+
+import yawl.YAWLNet;
+import yawl.YawlPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,7 +44,7 @@ public class YAWLNetImpl extends PetriNetTypeImpl implements YAWLNet {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Http://www.YawlDTU.dk";
+		return "http://www.Yawldtu.dk";
 	}
 
 } //YAWLNetImpl

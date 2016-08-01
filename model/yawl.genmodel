@@ -5,8 +5,7 @@
     complianceLevel="8.0" copyrightFields="false" usedGenPackages="../../org.pnml.tools.epnk/model/PNMLCoreModel.genmodel#//pnmlcoremodel"
     importOrganizing="true">
   <foreignModel>yawl.ecore</foreignModel>
-  <genPackages prefix="Yawl" basePackage="mbse.tutorial" disposableProviderFactory="true"
-      ecorePackage="yawl.ecore#/">
+  <genPackages prefix="Yawl" disposableProviderFactory="true" ecorePackage="yawl.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="yawl.ecore#//ArcTypes">
       <genEnumLiterals ecoreEnumLiteral="yawl.ecore#//ArcTypes/Regular"/>
       <genEnumLiterals ecoreEnumLiteral="yawl.ecore#//ArcTypes/Reset"/>

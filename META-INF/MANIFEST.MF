@@ -7,9 +7,9 @@ Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Export-Package: mbse.tutorial.yawl,
- mbse.tutorial.yawl.impl,
- mbse.tutorial.yawl.util
+Export-Package: yawl,
+ yawl.impl,
+ yawl.util
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.pnml.tools.epnk;visibility:=reexport
